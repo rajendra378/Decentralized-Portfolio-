@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "portforlio_backend": {
+      "main": "src/portforlio_backend/main.mo",
+      "type": "motoko"
+    },
+    "portforlio_frontend": {
+      "dependencies": [
+        "portforlio_backend"
+      ],
+      "source": [
+        "src/portforlio_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "portforlio_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
